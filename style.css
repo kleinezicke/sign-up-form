@@ -4,18 +4,23 @@
 
 body {
     margin: 0;
+    background-color: blanchedalmond;
 }
 
 #main {
     background-color: white;
     display: flex;
     height: 100vh;
+    width: min(100vw, 1500px);
     flex-direction: row;
+    margin: auto;
 }
 
 #image-container {
-    width: 40%;
     background-image: url(bg-image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: max(20%, 500px);
 }
 
 #company-container {
