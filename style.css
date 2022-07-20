@@ -2,6 +2,11 @@
     --shadow: rgba(0, 0, 0, 0.1);
 }
 
+@font-face {
+    font-family: comfortaa;
+    src: url(Comfortaa-VariableFont_wght.ttf);
+}
+
 body {
     margin: 0;
     background-color: blanchedalmond;
@@ -50,6 +55,7 @@ img {
     font-size: 2rem;
     margin-left: 1rem;
     margin-right: auto;
+    font-family: comfortaa;
 }
 
 #sign-up-container {
@@ -78,4 +84,6 @@ form {
 
 .input>input {
     display: block;
+    border-color: var(--shadow);
+    border-radius: 5px;
 }
