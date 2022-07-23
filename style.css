@@ -67,21 +67,20 @@ img {
     flex-direction: column;
 }
 
-#sign-up-container>div:not(#form-container) {
+#sign-up-container>div:not(#form-container, #account-container) {
     margin: auto;
     padding: 0 10px;
 }
 
-#form-container {
+form {
     box-shadow: 0 3px var(--shadow), 0 -3px var(--shadow);
     padding: 20px max(25vw, 100px) 20px 20px;
-    height: fit-content;
-}
-
-form {
+    height: 40vh;
+    margin: auto;
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    align-items: center;
+    gap: 25px;
 }
 
 .input>input {
@@ -94,6 +93,10 @@ form {
     outline:none;
     border-style: solid;
     border-color: #A48AC1;
+}
+
+#account-container {
+    margin: 10px auto auto 20px;
 }
 
 button {
