@@ -1,5 +1,7 @@
 :root {
     --shadow: rgba(0, 0, 0, 0.1);
+    --accent-color:#A48AC1;
+    --accent-color-dark:#7E5EA2;
 }
 
 @font-face {
@@ -86,4 +88,21 @@ form {
     display: block;
     border-color: var(--shadow);
     border-radius: 5px;
+}
+
+.input>input:focus {
+    outline:none;
+    border-style: solid;
+    border-color: #A48AC1;
+}
+
+button {
+    background-color: var(--accent-color);
+    padding: 5px;
+    border-style: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: var(--accent-color-dark);
 }
